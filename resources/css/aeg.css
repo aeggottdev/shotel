@@ -1,0 +1,82 @@
+
+
+/* @import "../../node_modules/font-awesome/scss/font-awesome.scss"; */
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+/** GENERAL **/
+a{
+    text-decoration: none;
+
+}
+/** .GENERAL **/
+.aeg-custom-class{
+    color:rgba(80, 177, 35, 0.726);
+}
+
+.aeg-container{
+    display: grid;
+   grid-template: 
+        [row1-start]"brand-logo header header" 150px [row1-end]
+        [row2-start]"side-menu main-content main-content" auto [row2-end]
+        [row3-start]"side-menu footer footer" auto [row3-end]
+        /1fr 9fr 2fr;
+        grid-gap: 5px;
+    
+}
+/** Side Menu **/
+    .aeg-admin-menu{
+        background-color: black;
+        color:white;
+        font-size: 20px;
+        font-weight: bold;
+        border: 1px solid rgba(80, 177, 35, 0.726);
+        grid-area: side-menu;
+    
+    }
+
+    .aeg-admin-menu ul{
+        list-style: none;
+    }
+    .aeg-admin-menu ul li a{
+        color:#ffffff;
+    }
+    /* Admin Menu Icons */
+    .aeg-admin-menu ul li a[href*="#Users"]::before{
+        padding: 0 5px;
+        color:#ffffff;
+        font-family: "Font Awesome 5 Free";
+        content:'\f509';
+        -webkit-font-smoothing: antialiazed;
+    }
+    .aeg-admin-menu ul li a[href="#home"]::before{
+        padding: 0 5px;
+        color:#ffffff;
+        font-family: "Font Awesome 5 Free";
+        content:'\f015';
+        -webkit-font-smoothing: antialiazed;
+    }
+    .aeg-admin-menu ul li a[href*="#Rooms"]::before{
+        padding: 0 5px;
+        color:#ffffff;
+        font-family: "Font Awesome 5 Free";
+        content:'\f236';
+        -webkit-font-smoothing: antialiazed;
+    }
+/*admin Menu Icons */
+/** .Side-Menu**/
+.aeg-content{
+    grid-area: main-content;
+    
+}
+footer{
+    grid-area: footer;
+    text-align: center;
+}
+.aeg-logo{
+    grid-area:brand-logo;    
+    background-color: white;
+
+}
+.aeg-logo img {
+    height: 90%;
+    justify-self: center;
+}
