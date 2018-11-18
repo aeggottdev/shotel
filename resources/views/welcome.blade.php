@@ -16,25 +16,6 @@
     </head>
     <body>
          
-        <div class="aeg-container">
-            <div class="aeg-logo">
-               <img src="{{URL::asset('imgs/shotel-logo.png')}}"> 
-           </div><!-- .aeg-logo -->
-           <nav class="aeg-admin-menu">
-               <ul>
-                   <li> <a href="#home"> home</a> </li>
-                   <li> <a href="#Users"> users</a> </li>
-                   <li> <a href="#Rooms"> Habitaciones</a> </li>
-                   
-               </ul>
-           </nav><!-- .aeg-admin-menu -->
-          
-           <div class="aeg-content">
-               <h1> Main Content</h1>
-           </div><!-- .aeg-content -->
-           <footer>
-               <p>All righs reserved &copy; <?php echo date('Y');?></p>
-           </footer><!-- .footer -->
-        </div><!-- .aeg-container -->
+       
     </body>
 </html>

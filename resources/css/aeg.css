@@ -80,3 +80,30 @@ footer{
     height: 90%;
     justify-self: center;
 }
+
+
+/** Admin Dashboard **/
+.aeg-admin-container{
+    display: grid;
+    grid-template: 
+    [row1-start]"piechart header header2" auto [row1-end]
+    [row2-start]"side-menu main-content main-content" auto [row2-end]  
+    /4fr 4fr 4fr;
+   
+}
+#piechart {
+    grid-area: piechart;
+    width: 450px;
+    height: 500px;;
+}
+#columnchart_values2{
+    grid-area:header;
+    width: 450px;
+    height: 150px;;
+   
+}
+
+/** Custom colors classess **/
+.bg-warning-soft{
+    background-color: #ffee07ab !important;
+}
